@@ -9,7 +9,7 @@ import {createStore, applyMiddleware} from 'redux';
 import reduxThunk from 'redux-thunk';
 
 
-store = createStore(
+const store = createStore(
   reducers,
   applyMiddleware(reduxThunk)
 );
