@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import UserList from './components/UserList'
 import {
   BrowserRouter,
   Switch,
@@ -18,10 +19,11 @@ function App() {
       </div>
       <Switch>
         <Route path="/login">
-          Login
+          <a href="/auth">Login</a>
         </Route>
         <Route path="/main">
-          Main
+          Main <br/>
+          <UserList/>
         </Route>
         <Route path="/about">
           About
